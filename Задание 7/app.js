@@ -1,5 +1,9 @@
-for (let i = 0; i < 100; i++) {
-    if(i%3===0 && i%5===0 && i%7===0){
-        console.log(i);
+function task3(a,b){
+    if(a>b){
+        console.log(a);
+    }
+    else if(a<b){
+        console.log(b);
     }
 }
+task3(8,64)
