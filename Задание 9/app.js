@@ -1,26 +1,11 @@
-// class Summ{
-//     x
-//     y
-//     z
-//     result
-//     constructor(varX, varY, varZ){
-//         this.x = varX
-//         this.y = varY
-//         this.z = varZ
-//     }
-//     print(){
-//         this.result = this.x+(this.y*this.z)
-//         console.log(`Ваш результат: ${this.result}`);
-//     }
-// }
-// let result = new Summ(2,5,6)
-// result.print()
 class task2{
     a
     b
     c
     d
     res
+    mas
+    i
     constructor(aa,bb,cc,dd){
         this.a = aa
         this.b = bb
@@ -28,9 +13,10 @@ class task2{
         this.d = dd
     }
     print(){
-        let mas=[this.a,this.b,this.c,this.d]
-        for(let i = 0; i < mas.length; i++){
-            this.res = this.res + mas[i]
+        this.res=0
+        this.mas=[this.a,this.b,this.c,this.d]
+        for(this.i = 0; this.i < this.mas.length; this.i++){
+            this.res = this.res + this.mas[this.i]
         }
         console.log(`Результат: ${this.res}`);
     }
