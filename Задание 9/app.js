@@ -17,7 +17,7 @@ class task5{
         this.k = 0
         this.mas=[this.a,this.b,this.c,this.d,this.e]
         for (this.i = 0; this.i < this.mas.length; this.i++) {
-            if(this.mas[this.i] < 0){
+            if(this.mas[this.i] % 3 === 0){
                 this.k = 1;
             }
         }
@@ -29,5 +29,5 @@ class task5{
         }
     }
 }
-const result = new task5(-1,2,3,4,-5)
+const result = new task5(15,26,33,46,56)
 result.print()
