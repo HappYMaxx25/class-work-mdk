@@ -1,17 +1,33 @@
-class task3{
+class task5{
     a
     b
-    constructor(aa,bb){
-        this.a=aa;
-        this.b=bb;
+    c
+    d
+    e
+    i
+    k
+    constructor(aa,bb,cc,dd,ee){
+        this.a = aa
+        this.b = bb
+        this.c = cc
+        this.d = dd
+        this.e = ee
     }
     print(){
-        if(this.a>this.b){
-            console.log(`Больше: ${this.a}`);
-        }else if(this.a<this.b){
-            console.log(`Больше: ${this.b}`);
+        this.k = 0
+        this.mas=[this.a,this.b,this.c,this.d,this.e]
+        for (this.i = 0; this.i < this.mas.length; this.i++) {
+            if(this.mas[this.i] < 0){
+                this.k = 1;
+            }
+        }
+        if(this.k>=1){
+            console.log("yes");
+        }
+        else{
+            console.log("no");
         }
     }
 }
-const TASK3 = new task3(5,3)
-TASK3.print()
+const result = new task5(-1,2,3,4,-5)
+result.print()
