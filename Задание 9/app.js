@@ -1,11 +1,12 @@
-class task5{
+class task1{
     a
     b
     c
     d
     e
     i
-    k
+    mas
+    mass
     constructor(aa,bb,cc,dd,ee){
         this.a = aa
         this.b = bb
@@ -14,20 +15,15 @@ class task5{
         this.e = ee
     }
     print(){
-        this.k = 0
         this.mas=[this.a,this.b,this.c,this.d,this.e]
+        this.mass = []
         for (this.i = 0; this.i < this.mas.length; this.i++) {
-            if(this.mas[this.i] % 3 === 0){
-                this.k = 1;
+            if(this.mas[this.i] % 3 === 0 && this.mas[this.i] % 5 === 0 && this.mas[this.i] % 7 === 0 ){
+                this.mass = [this.mas[this.i]];
             }
         }
-        if(this.k>=1){
-            console.log("yes");
-        }
-        else{
-            console.log("no");
-        }
+        console.log(this.mass);
     }
 }
-const result = new task5(15,26,33,46,56)
+const result = new task1(105,365,1,65,35)
 result.print()
