@@ -1,15 +1,18 @@
 class task2{
-    i
-    mass
-    print(){
-        this.mass =[]
-        for (this.i = 0; this.i <= 1000; this.i++) {
-            if(this.i % 3 === 0 && this.i % 5 === 0 && this.i % 7 === 0 ){
-                this.mass = [this.i];
-                console.log(this.mass);
+    I
+    fns;
+    fn(){
+        this.I = []
+        for (let i = 0; i <= 100; i++) {
+            if(i % 3 === 0 && i % 5 === 0 && i % 7 === 0 ){
+                this.I.push(i)
             }
         }
-        
+        return this.I
+    }
+    print(){
+        this.fns = this.fn()
+        console.log(this.fns);
     }
 }
 const result = new task2()
