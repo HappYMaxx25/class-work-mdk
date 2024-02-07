@@ -1,16 +1,19 @@
-class task1{
-    a;
-    constructor(aa){
+class task2{
+    a //начало
+    b //прыжок
+    c //конец
+    constructor(aa,bb,cc){
         this.a = aa
+        this.b = bb
+        this.c = cc
     }
     print(){
-        let res=1;
-        for(let i = 1; i < this.a; i++){
-            res = res * i
+        let res=0;
+        for(let i = this.a; i <= this.c; i=i+this.b){
+            res = res + i
         }
-        res = res * this.a
-        console.log(`Факториал числа ${this.a}: ${res}`);
+        console.log(`Арифметическая прогрессия = ${res}`);
     }
 }
-const result = new task1(6)
+const result = new task2(1,5,10)
 result.print()
