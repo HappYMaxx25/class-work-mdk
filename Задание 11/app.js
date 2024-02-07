@@ -1,34 +1,30 @@
-class Person { 
-    name; 
-    age; 
- 
-    constructor(pName, pAge) { 
-        this.name = pName; 
-        this.age = pAge; 
-    } 
- 
-    print() { 
-        console.log(this.name); 
-    } 
+class Asset { 
+    name
+    cost
+    constructor(name,cost){
+        this.name=name
+        this.cost=cost
+    }
 } 
- 
- 
-class Company extends Person { 
-    company; 
- 
-    constructor(e, pName, pAge) { 
-        super(pName, pAge); 
-        this.company = e; 
-    } 
- 
-    work() { 
-        console.log(`${this.name} работает в компании ${this.company}`); 
-    } 
+class FinancialAsset extends Asset { 
+    profitability
+    typeinv
+    constructor(name,cost,profitability,typeinv){
+        super(name,cost)
+        this.profitability=profitability
+        this.typeinv=typeinv
+    }
 } 
- 
- 
-const tom = new Person("Tom", 28); 
-const work = new Company("Россети", "Tom", 28); 
- 
-tom.print(); 
-work.work()
+class RealAsset extends Asset{
+    adress
+    typeact
+    constructor(name,cost,adress,typeact){
+        super(name,cost)
+        this.adress=adress
+        this.typeact=typeact
+    }
+}
+const gg = new RealAsset("Принтер",30000,"ул. Пушкина","Принтер")
+console.log(gg);
+const pp = new FinancialAsset("Медаль",45000,45100,"Неизвестно")
+console.log(pp);
