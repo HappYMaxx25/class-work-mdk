@@ -1,30 +1,30 @@
-class Asset { 
-    name
-    cost
-    constructor(name,cost){
-        this.name=name
-        this.cost=cost
+class Animal { 
+    view
+    place
+    constructor(view,place){
+        this.view=view
+        this.place=place
     }
 } 
-class FinancialAsset extends Asset { 
-    profitability
-    typeinv
-    constructor(name,cost,profitability,typeinv){
-        super(name,cost)
-        this.profitability=profitability
-        this.typeinv=typeinv
+class Mammal extends Asset { 
+    food
+    method
+    constructor(view,place,food,method){
+        super(view,place)
+        this.food=food
+        this.method=method
     }
 } 
-class RealAsset extends Asset{
-    adress
-    typeact
-    constructor(name,cost,adress,typeact){
-        super(name,cost)
-        this.adress=adress
-        this.typeact=typeact
+class Bird extends Asset{
+    move
+    tree
+    constructor(view,place,move,tree){
+        super(view,place)
+        this.move=move
+        this.tree=tree
     }
 }
-const gg = new RealAsset("Принтер",30000,"ул. Пушкина","Принтер")
+const gg = new Mammal("Принтер","30000","ул. Пушкина","Принтер")
 console.log(gg);
-const pp = new FinancialAsset("Медаль",45000,45100,"Неизвестно")
+const pp = new Bird("Голубь","Город","На еду","Любое")
 console.log(pp);
