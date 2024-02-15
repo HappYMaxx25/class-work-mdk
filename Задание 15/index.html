@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1></h1>
+    <div class="wrapper-content">
+        <div class="wrapper-form">
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Введите фамилию</label>
+                <input type="text" class="wrapper-form-input" onchange="reqInput();" id ="input-lastname" placeholder="Иванов">
+            </div>
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Введите имя</label>
+                <input type="text" class="=wrapper-form-input" onchange="reqInput();" id="input-firstname" placeholder="Иван">
+            </div>
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Вы после какого класса?</label>
+                <label for="" class="wrapper-form-label">
+                    <input type="checkbox" id="input-check-nine" class="wrapper-form-check">
+                    9
+                </label>
+                <label for="" class="wrapper-form-label">
+                    <input type="checkbox" id="input-check-eleven" class="wrapper-form-check">
+                    11
+                </label>
+            </div>
+            <button disabled class="wrapper-form-btn" id="next-btn" onclick="nextForm()">Продолжить</button>
+        </div>
+    </div>
+    <div class="wrapper-content-nine" style="display: none;">
+        <h2>После 9-го класса</h2>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Укажите школу</label>
+            <input type="text" class="wrapper-form-input" id="input-school" placeholder="Школа №3">
+        </div>
+        <div class="wrapper-form">
+            <label for="" class="wrapper-form-label">Укажите год окончания школлы</label>
+            <input type="text" class="wrapper-form-input" id="input-name" placeholder="2024">
+        </div>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Ваше направление</label>
+            <select id="select-nap">
+                <option value="Программирование">Программирование</option>
+                <option value="Дизайн">Дизайн</option>
+                <option value="Системное администрирование">Системное администрирование</option>
+                <option value="Администрирование баз данных">Администрирование баз данных</option>
+            </select>
+        </div>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Форма обучения</label>
+            <select id="select-form">
+                <option value="Очная">Очная</option>
+                <option value="Заочная">Заочная</option>
+            </select>
+        </div>
+        <button class="wrapper-save-btn" id="save-btn-1" onclick="saveForm();">Создать</button>
+    </div>
+    <div class="wrapper-content-eleven" style="display: none;">
+        <h2>После 11-го класса</h2>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Вы сразу переходите на 2-ой курс</label>
+            <label for="" class="wrapper-form-label">Укажите количество Баллов</label>
+            <input type="text" class="wrapper-form-input" id="input-bals" placeholder="">
+        </div>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Укажите школу</label>
+            <input type="text" class="wrapper-form-input" id="input-school" placeholder="Школа №3">
+        </div>
+        <div class="wrapper-form">
+            <label for="" class="wrapper-form-label">Укажите год окончания школлы</label>
+            <input type="text" class="wrapper-form-input" id="input-name" placeholder="2024">
+        </div>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Ваше направление</label>
+            <select id="select-nap">
+                <option value="Программирование">Программирование</option>
+                <option value="Дизайн">Дизайн</option>
+                <option value="Системное администрирование">Системное администрирование</option>
+                <option value="Администрирование баз данных">Администрирование баз данных</option>
+            </select>
+        </div>
+        <div class="wrapper-form-group">
+            <label for="" class="wrapper-form-label">Форма обучения</label>
+            <select id="select-form">
+                <option value="Очная">Очная</option>
+                <option value="Заочная">Заочная</option>
+            </select>
+        <button class="wrapper-form-btn" id="save-btn-2" onclick="saveForm();">Создать</button>
+    </div>
+</body>
+</html>
