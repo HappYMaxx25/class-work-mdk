@@ -14,6 +14,6 @@ let reqInput = () => {
 }
 let saveForm=() =>{
     let operation = reqInput()
-    alert(`Операция на ${summ} успешно проведена`)
+    alert(`Уважаемый ${otpName} операция на ${summ} успешно переведена человеку ${polName}`)
 
 }
