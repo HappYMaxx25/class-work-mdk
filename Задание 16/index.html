@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Создание банковской транзакции</h1>
+    <div class="wrapper-content">
+        <div class="wrapper-form">
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Введите сумму</label>
+                <input type="text" class="wrapper-form-input" onchange="reqInput();" id="input-summ" placeholder="5000">
+            </div>
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Введите дату</label>
+                <input type="date" class="wrapper-form-input" id="input-date">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-content-next">
+        <div class="wrapper-form">
+            <h2>Назовите отправителя и получателя</h2>
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Отправитель</label>
+                <input type="text" class="wrapper-form-input" onchange="reqInput();" id="input-otp_name" placeholder="Иванов">
+            </div>
+            <div class="wrapper-form-group">
+                <label for="" class="wrapper-form-label">Получатель</label>
+                <input type="text" class="wrapper-form-input" onchange="reqInput();" id="input-pol_name" placeholder="Горюнов">
+            </div>
+            <button disabled class="wrapper-form-btn" id="next-btn" onclick="saveForm()">Продолжить</button>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <сумма> <дата> отправитель получатель -->
