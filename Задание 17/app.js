@@ -11,4 +11,4 @@ function task(a,b,c,d,e,f,g,h){
     }
     console.log(gmas);
 }
-task(1,2,3,4,2,3,1,0)
+task(1,5,3,4,2,3,1,5)
